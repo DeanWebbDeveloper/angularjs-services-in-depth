@@ -44,10 +44,37 @@
         .when('/EditBook/:bookID', {
           templateUrl: '/app/templates/editBook.html',
           controller: 'EditBookController',
-          controllerAs: 'bookEditor'
+          controllerAs: 'bookEditor',
+          resolve: {
+            books: function (dataService) {
+              //throw 'error getting books';
+              return dataService.getAllBooks();
+            }
+          }
         })
         .otherwise('/');
 
     }]);
+
+    app.run(['$rootScope', function($rootScope) {
+
+      $rootScope.$on('$routeChangeSuccess', function (event, current, previous) {
+
+        console.log('successfully changed routes');
+
+      });
+
+      $rootScope.$on('$routeChangeError', function (event, current, previous, rejection) {
+        
+        console.log('error changing routes');
+
+        console.log(event);
+        console.log(current);
+        console.log(previous);
+        console.log(rejection);
+
+      });
+
+    }])
 
 }());
