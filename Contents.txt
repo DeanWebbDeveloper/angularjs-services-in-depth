@@ -8,7 +8,7 @@
 
 	2.3			-	Demo: Using the Provider Function
 	2.5			-	Demo: Using the Factory and Service Functions
-	2.7			- Demo: Using the Constant and Value Functions
+	2.7			-	Demo: Using the Constant and Value Functions
 	2.9			-	Demo: Using Dependency Annotations
 
 3		-	Common Built-in Services
@@ -17,3 +17,11 @@
 	3.6			-	Demo: Configuring and Using Routes
 	3.8			-	Demo: Using the Resolve Property and Handling Events
 	3.10		-	Demo: Using $cookies, $cookieStore, and $log
+
+4		-	Networking
+
+	4.6			-	Demo: Reading and Updating Data with $http
+	4.7			-	Demo: Adding and Deleting Data with $http
+	4.9			-	Demo: Using $http Shortcut Functions
+	4.12		-	Demo: Using Transformations and Interceptors
+	4.14		-	Demo: Using the $resource Service
