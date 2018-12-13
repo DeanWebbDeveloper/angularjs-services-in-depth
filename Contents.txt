@@ -25,3 +25,13 @@
 	4.9			-	Demo: Using $http Shortcut Functions
 	4.12		-	Demo: Using Transformations and Interceptors
 	4.14		-	Demo: Using the $resource Service
+
+5		-	Caching and Sharing Data
+
+	5.3			-	Demo: Using the $cacheFactory Service
+	5.5			-	Demo: Caching $http Requests
+	5.7			-	Demo: Sharing Data with Services
+
+6		-	Service Decorators
+
+	6.4			-	Demo: Decorating the $log Service
